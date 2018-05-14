@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {
+    background-image: url(signup2.jpg);
+    width:100%;
+    background-size:100%;
+    color:white;
+  }
+  #template {
+    font-size:4vw;
+    padding-left:40%;
+  }
+  #login {
+    font-size:1.5vw;
+    padding-left:30%;
+  }
+  #login a{
+    font-size:1.5vw;
+    color:#4fffb2;
+    text-decoration: none;
+    }
+  input[type=text], input[type=password],input[type=date] {
+    width:50%;
+    font-size:25;
+    padding:10px 10px;
+    margin:10px 0px;
+    display:inline-block;
+    border: 1px solid #ccc;
+    opacity:0.7;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  form {
+    color:white;
+    font-size: 2vw;
+    padding-left:30%;
+  }
+  button {
+    width:50%;
+    padding:10px 5px;
+    background-color:red;
+    border:1px solid red;
+    box-shadow:2px 2px 2px black;
+  }
+  @media screen and (max-width:600px){
+    input[type=text],input[type=password],input[type=date] {
+      width:100%;
+      margin:0px;
+    }
+    #login{
+      width:100%;
+      font-size: 3vw;
+      padding:0px;
+    }
+    form{
+      font-size: 3vw;
+      padding:0px;
+    }
+    button{
+      width:100%;
+    }
+    #login a{
+      font-size:3vw;
+    }
+    #template {
+      font-size: 5vw;
+    }
+  }
+  </style>
+</head>
+<body>
+<div>
+  <div id="template">
+    <b>Sign Up</b>
+  </div>
+  <form>
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" name="email" id="email" placeholder="Enter Email"><br>
+    <label for="password"><b>Password</b></label><br>
+    <input type="password" name="password" id="password" placeholder="Enter Password"><br>
+    <label for="confirmpass"><b>Confirm Password</b></label><br>
+    <input type="password" name="comfirmpass" id="confirmpass" placeholder="Re-Enter Password"><br>
+    <label for="mob"><b>Mobile Number</b></label><br>
+    <input type="text" name="mob" id="mob" placeholder="Enter Mobile number" maxlength="10"><br>
+    <label for="fullname"><b>Full Name</b></label><br>
+    <input type="text" name="fullname" id="fullname" placeholder="Enter Your Full Name"><br>
+    <label for="dob"><b>Date Of Birth</b></label><br>
+    <input type="date" name="dob" id="dob"><br>
+    <label for="gender"><b>Gender</b></label><br>
+    <input type="radio" name="gender" id="gender" value="Male">Male
+    <input type="radio" name="gender" id="gender" value="Female">Female
+  <div id="signupbutton">
+    <button type="submit" name="signup" value="signup"><b>Sign Up</b></button>
+  </div>
+</form>
+<div id="login">
+  <b>Already have account?</b><a href="index.html"><b>Log in</b></a>
+</div>
+</div>
+</body>
+</html>

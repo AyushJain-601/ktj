@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+        background-image:url(login2.jpg);
+        width:100%;
+
+        background-size:100%;
+
+    }
+    input[type=text], input[type=password] {
+      width:50%;
+      font-size:25;
+      padding:15px 10px;
+      margin:10px 0px;
+      display:inline-block;
+      border: 1px solid #ccc;
+      opacity:0.7;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+    }
+
+    form {
+      padding-top:0%;
+      padding-left:35%;
+      color:#cbffcd;
+      font-size:3.5vw;
+
+    }
+    #template {
+      color:#cbffcd;
+      font-size:5vw;
+      padding-top:10%;
+      padding-left:37%;
+    }
+    button {
+      padding-top:2%;
+      border:1px solid red;
+      background-color:red;
+      width:50%;
+      padding:10px 0pc;
+    }
+    #notuser {
+      padding-left:35%;
+      font-size:2vw;
+
+      color:#cbffcd;
+    }
+    #notuser a{
+      text-decoration: none;
+      font-size:2vw;
+
+      color:#4fffb2;
+  }
+  #rememberme {
+    font-size:2vw;
+  }
+  @media screen and (max-width: 600px){
+      input[type=text], input[type=password]{
+        width:100%;
+        margin:0px;
+      }
+      button {
+        width:100%;
+      }
+      form {
+        padding-left:0px;
+      }
+      #notuser{
+        width:100%;
+        padding-left:0px;
+      }
+  }
+  </style>
+
+</head>
+<body>
+  <div id="template">
+    <b>Log in please!</b>
+  </div>
+  <div id="userpass">
+    <form>
+      <label for="username"><b>Username</b></label>
+      <br>
+      <input type="text" id="username" name="username" placeholder="Enter username here">
+      <br>
+      <label for="password"><b>Password</b></label>
+      <br>
+      <input type="password" id="password" name="password" placeholder="Enter password here">
+      <div id="login">
+      <button type="submit" name="login" value="login">Log in</button>
+      </div>
+    <div id="rememberme">
+      <input type="checkbox" name="remember me" value="remember"><b>Remember me</b>
+    </div>
+  </form>
+  <div id="notuser">
+    <b>New user?</b><a href="signup2.html">Create new account</a>
+  </div>
+</body>
+</html>
